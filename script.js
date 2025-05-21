@@ -1,4 +1,3 @@
-// Rendu final JS – Génération d'un site web dynamique à partir d'une API
 // 💻📝 Rendu final JS – Génération d'un site web dynamique à partir des données d'une API
 // Objectif : utilisation de fetch() pour récupérer des données JSON, manipulation DOM, boucles, gestion d'images et cartes interactives.
 // 🟢 Niveau 1 – Récupérer les données de l'API
@@ -41,14 +40,19 @@
 
 
 
+   // let carteProduitSection = document.createElement("section");
+    //     carteProduitSection.id = "produitsSection";
+
+
+    // debut info
 fetch("https://js-dynamic-portfolio-data-makerslab-emlyon-cdweb-8f83155c64a0cc.gitlab.io/json/patisserie.json")
   .then((response) => response.json()) // transforme la réponse en JSON
   .then((data) => {
     const container = document.getElementById("mainContainer");
     console.log(data);
-    console.log(data.nomCommercial)
+         console.log(data.nomCommercial)
 
-    
+  
     let NomBoutique = document.createElement("H1")
     NomBoutique.textContent = data.nomCommercial;
                 container.appendChild(NomBoutique);
@@ -64,62 +68,53 @@ fetch("https://js-dynamic-portfolio-data-makerslab-emlyon-cdweb-8f83155c64a0cc.g
     let avantages = document.createElement("p")
     avantages.textContent = data.avantagesClients;
                 container.appendChild(avantages);
+ 
 
 
+  // les cartes produits
+    let produit = data.produits;
+              
+    produit.forEach(element => {
 
-    // let Varproduits = document.createElement("div")
-    // Varproduits.textContent = data.produits;
-    //             container.appendChild(Varproduits);
+     const patisserieContainer = document.getElementById("PatisserieContainer");
 
-    // let Varnom = document.createElement("div")
-    // Varnom.textContent = data.nom;
-    //             container.appendChild(Varnom);
 
-    //  let Vardescription = document.createElement("div")
-    // Vardescription.textContent = data.description;
-    //             container.appendChild(Vardescription);
+      let carteProduitDiv = document.createElement("div");
+          carteProduitDiv.classList.add("carteProduitDiv");
 
-    //  let image = document.createElement("div")
-    // image.textContent = data.image-url;
-    //             container.appendChild(image);
+      let Cartetitreh2 = document.createElement("h2");
+          Cartetitreh2.textContent = element.nom;
+
+      let CarteDescriptionP = document.createElement("p");
+          CarteDescriptionP.textContent = element.description;
+
+      let image = document.createElement("img");
+             image.src = element["image-url"];
+             image.alt = element.nom;
+
+        carteProduitDiv.appendChild(Cartetitreh2);
+        carteProduitDiv.appendChild(image);
+        carteProduitDiv.appendChild(CarteDescriptionP);
+        
+        patisserieContainer.appendChild(carteProduitDiv);
+   
 });
 
-
-function CardPatisserie(Patisserie) {
-  
-    let
-
-}
-
-function product(product) {}
-
-
-
-
-//  data.forEach(product => {
-//       let card = document.createElement("div");
-//       // ajoute une classe pour le style
-//       card.classList.add("productCard");
-//       // crée une image
-//       let img = document.createElement("img");
-//       // met l'image et son alt
-//       img.src = product.image;
-//       img.alt = product.nomCommercial;
-//       // crée le titre
-//       let title = document.createElement("h2");
-//       title.textContent = product.title;
-//       // crée le prix
-//       let price = document.createElement("p");
-//       price.textContent = product.price + " €";
-//       // crée un bouton acheter
-//       let button = document.createElement("button");
-//       button.textContent = "Acheter";
-//       button.classList.add("buyButton");
-//       // ajoute tout dans la carte
-//       card.appendChild(img);
-//       card.appendChild(title);
-//       card.appendChild(price);
-//       card.appendChild(button);
-//       // met la carte dans la page
-//       container.appendChild(card);
+//   fetch(url)
+//     .then(res => res.json())
+//     .then(data => {
+//       data.forEach(product => {
+//         const card = document.createElement("div");
+//         card.className = "productCard";
+//         card.innerHTML = `
+//           <img src="${product.image}" alt="${product.title}">
+//           <h2>${product.title}</h2>
+//           <p>${product.price} €</p>
+//           <button class="buyButton">Acheter</button>
+//         `;
+//         container.appendChild(card);
+//       });
 //     });
+
+
+ });

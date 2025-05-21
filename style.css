@@ -1,11 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+
+#mainContainer {
+        background-color: #EDE0D4   ;
+        padding-top: 20px;
+}
+
+
+
+
 #mainContainer h1 {
     display: flex;
     align-content: space-around;
     justify-content: space-around;
     align-items: center;
     font-size: 35px;
-    margin: 30px;
     flex-grow: 1;
+    color: #362116;
 
 }
 
@@ -13,9 +30,8 @@
     
     display: flex;
     justify-content: space-around;
-    font-size: 14px;
-    color: #444;
-    margin: 5px 0;
+    font-size: 17px;
+    color: #523624;
     padding: 23px;
 }
 
@@ -25,11 +41,11 @@
     padding: 10px 20px;
     font-size: 14px;
     color: white;
-    background: linear-gradient(270deg, #f9578d, #ffb347, #00ffea, #3e00dc);
+    background: linear-gradient(270deg, #fdfdfd, #f3f0f0, #edebeb, #7F5539);
     background-size: 600% 600%;
     border: none;
     border-radius: 8px;
-      margin: auto
+    margin: auto;
 }
 
 #mainContainer button:hover {
@@ -37,6 +53,55 @@
       transform: scale(1.08);
         animation-duration: 8ms;
   animation: moveRadial 8s ease-in-out infinite;
+  }
 
 
+
+
+
+
+
+
+
+
+
+
+#PatisserieContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
+
+
+#PatisserieContainer h2 {
+    display: flex;
+    justify-content: space-around;
+    animation-timing-function: #f1e6dc;
+}
+
+
+#PatisserieContainer img {
+ padding: auto;
+}
+
+#PatisserieContainer p {
+color: #352a1f;
+}
+
+
+
+#PatisserieContainer div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: white;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    width: 260px;
+    height: 400px;
+    padding: 19px;   
+    margin: 19px;
+    text-align: center;
+    background-color: #EDE0D4;
+}
+    
