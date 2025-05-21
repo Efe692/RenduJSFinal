@@ -1,0 +1,42 @@
+#mainContainer h1 {
+    display: flex;
+    align-content: space-around;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 35px;
+    margin: 30px;
+    flex-grow: 1;
+
+}
+
+#mainContainer p {
+    
+    display: flex;
+    justify-content: space-around;
+    font-size: 14px;
+    color: #444;
+    margin: 5px 0;
+    padding: 23px;
+}
+
+#mainContainer button {
+      display: flex;
+    justify-content: space-around;
+    padding: 10px 20px;
+    font-size: 14px;
+    color: white;
+    background: linear-gradient(270deg, #f9578d, #ffb347, #00ffea, #3e00dc);
+    background-size: 600% 600%;
+    border: none;
+    border-radius: 8px;
+      margin: auto
+}
+
+#mainContainer button:hover {
+    box-shadow: 0 0 20px 5px rgba(87, 87, 87, 0.7);
+      transform: scale(1.08);
+        animation-duration: 8ms;
+  animation: moveRadial 8s ease-in-out infinite;
+
+
+}
