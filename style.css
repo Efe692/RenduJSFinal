@@ -70,6 +70,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    background-color: #eeeeee;
 }
 
 
@@ -105,3 +106,42 @@ color: #352a1f;
     background-color: #EDE0D4;
 }
     
+
+
+#ServicesContainer {
+            background-color: #EDE0D4   ;
+ display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#ServicesContainer div {
+      display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #eeeeee;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    width: 260px;
+height: 122px;  
+  padding: 19px;   
+    margin: 19px;
+    text-align: center;
+    background-color: #eeeeee;
+}
+
+#ServicesContainer h3 {
+     display: flex;
+    justify-content: space-around;
+    animation-timing-function: #f1e6dc;
+}
+
+#ServicesContainer p {
+    color: #352a1f;
+
+}
+
+
+
+
+

@@ -22,27 +22,6 @@
 // Favicon personnalisé : via balise <link rel="icon" ...>
 // Design : styles CSS avec couleurs, espaces, ombres, transitions, animations légères
 
-// fetch("https://js-dynamic-portfolio-data-makerslab-emlyon-cdweb-8f83155c64a0cc.gitlab.io/json/patisserie.json")
-//     .then(response => response.json())
-//     .then(data => {
-//         data.forEach(nomCommercial => {
-//             console.log(nomCommercial.title);
-//         });
-//     });
-
-
-// fetch("https://js-dynamic-portfolio-data-makerslab-emlyon-cdweb-8f83155c64a0cc.gitlab.io/json/patisserie.json")
-//   .then((response) => response.json()) // transforme la réponse en JSON
-//   .then((data) => {
-//     const container = document.getElementById("PatisserieContainer");
-//     console.log(data);
-//     console.log(data.nomCommercial)
-
-
-
-   // let carteProduitSection = document.createElement("section");
-    //     carteProduitSection.id = "produitsSection";
-
 
     // debut info
 fetch("https://js-dynamic-portfolio-data-makerslab-emlyon-cdweb-8f83155c64a0cc.gitlab.io/json/patisserie.json")
@@ -95,26 +74,79 @@ fetch("https://js-dynamic-portfolio-data-makerslab-emlyon-cdweb-8f83155c64a0cc.g
         carteProduitDiv.appendChild(Cartetitreh2);
         carteProduitDiv.appendChild(image);
         carteProduitDiv.appendChild(CarteDescriptionP);
-        
+
         patisserieContainer.appendChild(carteProduitDiv);
    
 });
 
-//   fetch(url)
-//     .then(res => res.json())
-//     .then(data => {
-//       data.forEach(product => {
-//         const card = document.createElement("div");
-//         card.className = "productCard";
-//         card.innerHTML = `
-//           <img src="${product.image}" alt="${product.title}">
-//           <h2>${product.title}</h2>
-//           <p>${product.price} €</p>
-//           <button class="buyButton">Acheter</button>
-//         `;
-//         container.appendChild(card);
-//       });
-//     });
+// les ServicesContainer
+
+    let ServicesC = data.services;
+              
+    ServicesC.forEach(element => {
+
+     const ServicesContainer = document.getElementById("ServicesContainer");
+
+
+      let carteServicesDiv = document.createElement("div");
+          carteServicesDiv.classList.add("carteServicesDiv");
+
+      let Carteservicesh3 = document.createElement("h3");
+          Carteservicesh3.textContent = element.nom;
+
+      let Carteservices = document.createElement("p");
+          Carteservices.textContent = element.description;
+
+        carteServicesDiv.appendChild(Carteservicesh3);
+        carteServicesDiv.appendChild(Carteservices);
+
+        ServicesContainer.appendChild(carteServicesDiv);
+   
+});
+
+
+
+
+
+
+
+
+
+// // les TémoignagesContainer
+    let TémoignagesC = data.temoignages;
+              
+    produit.forEach(element => {
+        
+
+     const TémoignagesC = document.getElementById("TémoignagesC");
+
+
+      let TémoignagesDiv = document.createElement("div");
+          TémoignagesDiv.classList.add("TémoignagesDiv");
+
+      let Témoignagesh2 = document.createElement("h2");
+          Témoignagesh2.textContent = element.prenom;
+
+       let Témoignagesh3 = document.createElement("h3");
+          Témoignagesh3.textContent = element.typeExperience;
+
+      let CarteDescriptionP = document.createElement("p");
+          CarteDescriptionP.textContent = element.commentaire;
+
+           let CarteNoteP = document.createElement("p");
+           console.log(element.note);
+           
+          CarteNoteP.textContent = element.note;
+
+        TémoignagesDiv.appendChild(Témoignagesh2);
+        TémoignagesDiv.appendChild(Témoignagesh3);
+        TémoignagesDiv.appendChild(CarteDescriptionP);
+
+        // TémoignagesC.appendChild(TémoignagesDiv);
+   
+});
+
+
 
 
  });
