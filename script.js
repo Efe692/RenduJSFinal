@@ -25,7 +25,7 @@
 
     // debut info
 fetch("https://js-dynamic-portfolio-data-makerslab-emlyon-cdweb-8f83155c64a0cc.gitlab.io/json/patisserie.json")
-  .then((response) => response.json()) // transforme la réponse en JSON
+  .then((response) => response.json())
   .then((data) => {
     const container = document.getElementById("mainContainer");
     console.log(data);
@@ -36,7 +36,7 @@ fetch("https://js-dynamic-portfolio-data-makerslab-emlyon-cdweb-8f83155c64a0cc.g
     NomBoutique.textContent = data.nomCommercial;
                 container.appendChild(NomBoutique);
 
-     let Accroche = document.createElement("p")
+     let Accroche = document.createElement("H2")
     Accroche.textContent = data.phraseAccroche;
                 container.appendChild(Accroche);
 
@@ -126,6 +126,7 @@ TémoignagesC.forEach(element => {
       let Témoignagesh2 = document.createElement("h2");
           Témoignagesh2.textContent = element.prenom;
 
+
        let Témoignagesh3 = document.createElement("h3");
           Témoignagesh3.textContent = element.typeExperience;
 
@@ -135,9 +136,12 @@ TémoignagesC.forEach(element => {
            let CarteNoteP = document.createElement("p");
            CarteNoteP.textContent = element.note;
 
+
         TémoignagesDiv.appendChild(Témoignagesh2);
         TémoignagesDiv.appendChild(Témoignagesh3);
+
         TémoignagesDiv.appendChild(CarteDescriptionP);
+
         TémoignagesDiv.appendChild(CarteNoteP);
 
   TémoignagesCont.appendChild(TémoignagesDiv);

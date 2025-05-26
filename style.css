@@ -9,20 +9,36 @@
 /* // #mainContainer // */
 
 #mainContainer {
+      padding: 30px;
         background-color: #EDE0D4   ;
         padding-top: 20px;
 }
 
 #mainContainer h1 {
+
+  font-family: "Rock Salt", cursive;
+  font-weight: 500;
     display: flex;
     align-content: space-around;
     justify-content: space-around;
     align-items: center;
     font-size: 35px;
     flex-grow: 1;
-    color: #362116;
+   color: #523624;
+   padding: 15px;
 
 }
+
+#mainContainer H2 {
+    
+    display: flex;
+    justify-content: space-around;
+    font-size: 17px;
+    color: #523624;
+    padding: 40px;
+
+}
+
 
 #mainContainer p {
     
@@ -30,7 +46,7 @@
     justify-content: space-around;
     font-size: 17px;
     color: #523624;
-    padding: 23px;
+    padding: 40px;
 }
 
 #mainContainer button {
@@ -44,10 +60,11 @@
     border: none;
     border-radius: 8px;
     margin: auto;
+    transition: all ease-out 200ms;
 }
 
 #mainContainer button:hover {
-    box-shadow: 0 0 20px 5px rgba(87, 87, 87, 0.7);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.221);
       transform: scale(1.08);
         animation-duration: 8ms;
   animation: moveRadial 8s ease-in-out infinite;
@@ -66,6 +83,7 @@
 
 
 #PatisserieContainer {
+      padding: 30px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -74,19 +92,36 @@
 
 
 #PatisserieContainer h2 {
+    font-family: "Roboto", sans-serif;
     display: flex;
     justify-content: space-around;
-    animation-timing-function: #f1e6dc;
+    color: #523624;
+        padding: auto;   
+
 }
 
 
 #PatisserieContainer img {
- padding: auto;
+ border-radius: 30px;
+     transition: all ease-out 300ms;
+
 }
 
+#PatisserieContainer img:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.221);
+      transform: scale(1.06);
+        animation-duration: 8ms;
+  animation: moveRadial 8s ease-in-out infinite;
+  }
+
+
 #PatisserieContainer p {
-color: #352a1f;
-}
+    color: #523624;
+    font-family: emoji;
+    font-size: bold
+    ;
+    padding: 5px;
+  }
 
 
 
@@ -95,14 +130,15 @@ color: #352a1f;
     flex-direction: column;
     justify-content: space-between;
     background: white;
-    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
-    border-radius: 6px;
+    box-shadow: 0px 8px 12px #00000041;
+ border-radius: 10px;
     width: 260px;
     height: 400px;
     padding: 19px;   
     margin: 19px;
     text-align: center;
     background-color: #EDE0D4;
+        transition: all ease-out 300ms;
 }
     
 
@@ -112,6 +148,8 @@ color: #352a1f;
 
 
 #ServicesContainer {
+    padding: 30px;
+
             background-color: #EDE0D4   ;
  display: flex;
     flex-wrap: wrap;
@@ -123,19 +161,29 @@ color: #352a1f;
     flex-direction: column;
     justify-content: space-between;
     background: #eeeeee;
-    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
-    border-radius: 6px;
+    box-shadow: 0px 8px 12px #00000041;
+    border-radius: 100px;
     width: 260px;
 height: 122px;  
   padding: 19px;   
     margin: 19px;
     text-align: center;
     background-color: #eeeeee;
+         transition: all ease-out 200ms;
+
 }
 
+#ServicesContainer div:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.201);
+      transform: scale(1.07);
+  }
+
+
 #ServicesContainer h3 {
+    font-family: "Roboto", sans-serif;
      display: flex;
     justify-content: space-around;
+    color: #523624;
 }
 
 #ServicesContainer p {
@@ -153,6 +201,9 @@ height: 122px;
 /* // TémoignagesC // */
 
 #TémoignagesC {
+    padding: 30px;
+        display: flex;
+justify-content: center;
   background-color: #eeeeee;
 }
 
@@ -163,10 +214,10 @@ height: 122px;
       display: flex;
     flex-direction: column;
     background: white;
-    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 8px 12px #00000041;
     border-radius: 6px;
     width: 260px;
-    height: 130px;
+    height: 210px;
     padding: 10px;   
     margin: 10px;
     text-align: center;
@@ -175,17 +226,22 @@ height: 122px;
 }
 
 #TémoignagesC h2 {
-      color: #352a1f;
+      padding: 4px;   
+    font-family: "Roboto", sans-serif;
+    color: #523624;
 
 }
 
 #TémoignagesC h3 {
-      color: #352a1f;
+      padding: 10px;
+    color: #523624;
 
 }
 
 #TémoignagesC P {
-      color: #352a1f;
+    color: #523624;
+            padding: 10px;
+
 
 }
 
