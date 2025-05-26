@@ -6,14 +6,12 @@
 
 
 
+/* // #mainContainer // */
 
 #mainContainer {
         background-color: #EDE0D4   ;
         padding-top: 20px;
 }
-
-
-
 
 #mainContainer h1 {
     display: flex;
@@ -63,6 +61,7 @@
 
 
 
+/* // PatisserieContainer // */
 
 
 
@@ -108,6 +107,10 @@ color: #352a1f;
     
 
 
+/* // ServicesContainer // */
+
+
+
 #ServicesContainer {
             background-color: #EDE0D4   ;
  display: flex;
@@ -133,13 +136,77 @@ height: 122px;
 #ServicesContainer h3 {
      display: flex;
     justify-content: space-around;
-    animation-timing-function: #f1e6dc;
 }
 
 #ServicesContainer p {
     color: #352a1f;
 
 }
+
+
+
+
+
+
+
+
+/* // TémoignagesC // */
+
+#TémoignagesC {
+  background-color: #eeeeee;
+}
+
+
+
+
+#TémoignagesC div {
+      display: flex;
+    flex-direction: column;
+    background: white;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    width: 260px;
+    height: 130px;
+    padding: 10px;   
+    margin: 10px;
+    text-align: center;
+    background-color: #EDE0D4;
+
+}
+
+#TémoignagesC h2 {
+      color: #352a1f;
+
+}
+
+#TémoignagesC h3 {
+      color: #352a1f;
+
+}
+
+#TémoignagesC P {
+      color: #352a1f;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
