@@ -115,10 +115,9 @@ fetch("https://js-dynamic-portfolio-data-makerslab-emlyon-cdweb-8f83155c64a0cc.g
 // // les TémoignagesContainer
     let TémoignagesC = data.temoignages;
               
-    produit.forEach(element => {
-        
+TémoignagesC.forEach(element => {
 
-     const TémoignagesC = document.getElementById("TémoignagesC");
+  const TémoignagesCont = document.getElementById("TémoignagesC");
 
 
       let TémoignagesDiv = document.createElement("div");
@@ -134,16 +133,14 @@ fetch("https://js-dynamic-portfolio-data-makerslab-emlyon-cdweb-8f83155c64a0cc.g
           CarteDescriptionP.textContent = element.commentaire;
 
            let CarteNoteP = document.createElement("p");
-           console.log(element.note);
-           
-          CarteNoteP.textContent = element.note;
+           CarteNoteP.textContent = element.note;
 
         TémoignagesDiv.appendChild(Témoignagesh2);
         TémoignagesDiv.appendChild(Témoignagesh3);
         TémoignagesDiv.appendChild(CarteDescriptionP);
+        TémoignagesDiv.appendChild(CarteNoteP);
 
-        // TémoignagesC.appendChild(TémoignagesDiv);
-   
+  TémoignagesCont.appendChild(TémoignagesDiv);
 });
 
 
