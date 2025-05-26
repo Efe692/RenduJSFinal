@@ -71,6 +71,7 @@
 }
 
 
+#map { height: 220px; }
 
 
 
@@ -103,16 +104,10 @@
 
 #PatisserieContainer img {
   border-radius: 30px;
-  transition: all ease-out 300ms;
 
 }
 
-#PatisserieContainer img:hover {
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.221);
-  transform: scale(1.06);
-  animation-duration: 8ms;
-  animation: moveRadial 8s ease-in-out infinite;
-}
+
 
 
 #PatisserieContainer p {
@@ -158,31 +153,26 @@
 #ServicesContainer div {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   background: #eeeeee;
   box-shadow: 0px 8px 12px #00000041;
-  border-radius: 100px;
+  border-radius: 6px;
   width: 260px;
   height: 122px;
   padding: 19px;
   margin: 19px;
-  text-align: center;
+  text-align: left;
   background-color: #eeeeee;
-  transition: all ease-out 200ms;
-
 }
 
-#ServicesContainer div:hover {
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.201);
-  transform: scale(1.07);
-}
+
 
 
 #ServicesContainer h3 {
   font-family: "Roboto", sans-serif;
   display: flex;
-  justify-content: space-around;
   color: #523624;
+    text-align: left;
+    padding-bottom: 10px;
 }
 
 #ServicesContainer p {
@@ -224,11 +214,6 @@
   margin: 10px;
   text-align: center;
   background-color: #EDE0D4;
-  transition: 200ms;
-}
-#TémoignagesC div:hover {
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.201);
-  transform: scale(1.07);
 }
 
 

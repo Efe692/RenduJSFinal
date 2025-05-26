@@ -31,7 +31,7 @@ fetch("https://js-dynamic-portfolio-data-makerslab-emlyon-cdweb-8f83155c64a0cc.g
     console.log(data);
          console.log(data.nomCommercial)
 
-  
+
     let NomBoutique = document.createElement("H1")
     NomBoutique.textContent = data.nomCommercial;
                 container.appendChild(NomBoutique);
@@ -48,6 +48,7 @@ fetch("https://js-dynamic-portfolio-data-makerslab-emlyon-cdweb-8f83155c64a0cc.g
     avantages.textContent = data.avantagesClients;
                 container.appendChild(avantages);
  
+
 
 
   // les cartes produits
@@ -79,6 +80,9 @@ fetch("https://js-dynamic-portfolio-data-makerslab-emlyon-cdweb-8f83155c64a0cc.g
    
 });
 
+
+
+
 // les ServicesContainer
 
     let ServicesC = data.services;
@@ -96,6 +100,9 @@ fetch("https://js-dynamic-portfolio-data-makerslab-emlyon-cdweb-8f83155c64a0cc.g
 
       let Carteservices = document.createElement("p");
           Carteservices.textContent = element.description;
+
+      let Carteservices2p = document.createElement("h4");
+        Carteservices2p.textContent = element
 
         carteServicesDiv.appendChild(Carteservicesh3);
         carteServicesDiv.appendChild(Carteservices);
@@ -151,3 +158,13 @@ TémoignagesC.forEach(element => {
 
 
  });
+
+ var map = L.map('map').setView([45.741388902748945, 4.839088288066664], 12);
+
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+}).addTo(map);
+
+L.marker([45.741388902748945, 4.839088288066664]).addTo(map)
+    .bindPopup('Coucou Jessica.')
+    .openPopup();
